@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-02 11:07:18.734780",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_y9b3",
+  "customer",
+  "customer_name",
+  "column_break_nmqy",
+  "date",
+  "delivery_date",
+  "items_section",
+  "items",
+  "tax_section",
+  "apply",
+  "column_break_mxiz",
+  "column_break_cefq",
+  "tax_rate",
+  "net_section",
+  "column_break_ijus",
+  "column_break_erzf",
+  "net_quantity",
+  "column_break_nhap",
+  "net_amount",
+  "total_section",
+  "column_break_usmi",
+  "column_break_gwkw",
+  "total_taxes",
+  "amended_from",
+  "column_break_paaz",
+  "total_amount",
+  "rounded_value",
+  "in_words"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_y9b3",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "CSO_Customer"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Order Item"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_nmqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CSO_Sales Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "in_words",
+   "fieldtype": "Data",
+   "label": "In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_usmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gwkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_paaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rounded_value",
+   "fieldtype": "Currency",
+   "label": "Rounded Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tax_section",
+   "fieldtype": "Section Break",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Percent",
+   "label": "Tax Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply",
+   "fieldtype": "Check",
+   "label": "Apply Tax"
+  },
+  {
+   "fieldname": "column_break_mxiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_quantity",
+   "fieldtype": "Int",
+   "label": "Net Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "label": "Net Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_section",
+   "fieldtype": "Section Break",
+   "label": "Net"
+  },
+  {
+   "fieldname": "column_break_ijus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_erzf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nhap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_taxes",
+   "fieldtype": "Currency",
+   "label": "Total Taxes and Charges",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cefq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-07 12:12:06.821422",
+ "modified_by": "Administrator",
+ "module": "Custom Sales Order",
+ "name": "CSO_Sales Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

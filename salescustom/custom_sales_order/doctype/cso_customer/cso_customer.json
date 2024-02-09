@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-01 12:42:23.614890",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "start",
+  "full_name",
+  "details_section",
+  "first_name",
+  "column_break_alau",
+  "middle_name",
+  "column_break_lpcu",
+  "last_name",
+  "section_break_cgjs",
+  "gender",
+  "extra_information_section",
+  "customer_details",
+  "contact_and_address_tab",
+  "address_section",
+  "address_line_1",
+  "address_line_2",
+  "city",
+  "column_break_sifb",
+  "state",
+  "country",
+  "postal_code",
+  "contact_section",
+  "email",
+  "phone",
+  "relation_manger_tab",
+  "_todo_section",
+  "image",
+  "document"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_and_address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact and Address"
+  },
+  {
+   "fieldname": "relation_manger_tab",
+   "fieldtype": "Tab Break",
+   "label": "Relation Manger"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_details",
+   "fieldtype": "Text",
+   "label": "Customer Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "start",
+   "fieldtype": "Section Break",
+   "label": "Invoice Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "extra_information_section",
+   "fieldtype": "Section Break",
+   "label": "Extra Information"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sifb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code",
+   "search_index": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "_todo_section",
+   "fieldtype": "Section Break",
+   "label": "// TODO"
+  },
+  {
+   "fieldname": "column_break_alau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lpcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cgjs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-05 11:34:13.363620",
+ "modified_by": "Administrator",
+ "module": "Custom Sales Order",
+ "name": "CSO_Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
